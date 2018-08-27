@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            
+    </head>
+    <body>
+        <h2 align="center" class="teal">JAVA EE Training</h2>
+        <hr/>
+        
+        <div align="center">
+            <div style="border: solid 1px;padding: 20px; width:400px;">
+
+                <!--<form action="doLogin" method="GET">-->                    
+                <!--<form action="cdi.jsp" method="GET">-->
+                <form action="doLoginSession" method="GET">
+<!--                    <label> Username: </label><input type="text" name="username"/> <br/> <br/>
+                    <label> Password: </label><input type="password" name="password"/>
+                    <br/> <br/>-->
+                    <!--<input value="Login" type="submit"/>-->
+                    
+                    <div class="row">
+                        <div class="input-field col s12">
+                          <input id="username" type="text" class="validate" name="username">
+                          <label for="username">Username</label>
+                        </div>
+                      </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                          <input id="password" type="password" class="validate" name="password">
+                          <label for="password">Password</label>
+                        </div>
+                      </div>
+                    <button class="btn" type="submit"> Login </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
